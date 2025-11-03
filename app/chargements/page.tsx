@@ -74,9 +74,6 @@ export default function ChargementsPage() {
               <Package className="w-10 h-10 text-blue-600" />
               Chargements
             </h1>
-            <p className="text-slate-600 mt-2">
-              Gérez vos chargements et leurs produits associés
-            </p>
           </div>
           <Link href="/chargements/nouveau">
             <Button
@@ -93,7 +90,7 @@ export default function ChargementsPage() {
           <CardHeader>
             <CardTitle>Liste des chargements</CardTitle>
             <CardDescription>
-              Tous les chargements enregistrés dans le système
+              Tous les chargements enregistrés
             </CardDescription>
           </CardHeader>
           <CardContent>
