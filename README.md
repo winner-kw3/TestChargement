@@ -3,6 +3,7 @@
 
 ## Installer et lancer le projet
 1. Ouvrir un terminal à la racine du projet :
+   git clone https://github.com/winner-kw3/TestChargement.git
    cd TestChargement
 
 2. Installer les dépendances :
