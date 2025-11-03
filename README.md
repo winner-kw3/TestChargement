@@ -1,11 +1,6 @@
 # Test_Chargement
 
 
-## Prérequis
-- Node.js 18+ (ou version compatible avec Next.js 13.5.1)
-- npm ou yarn
-- Compte Supabase (https://app.supabase.com)
-
 ## Installer et lancer le projet
 1. Ouvrir un terminal à la racine du projet :
    cd TestChargement
