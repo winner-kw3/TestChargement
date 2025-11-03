@@ -68,74 +68,20 @@ CREATE TABLE IF NOT EXISTS chargement_produits (
   created_at timestamptz DEFAULT now()
 );
 
-ALTER TABLE clients ENABLE ROW LEVEL SECURITY;
-ALTER TABLE transports ENABLE ROW LEVEL SECURITY;
-ALTER TABLE produits ENABLE ROW LEVEL SECURITY;
-ALTER TABLE chargements ENABLE ROW LEVEL SECURITY;
-ALTER TABLE chargement_produits ENABLE ROW LEVEL SECURITY;
 
-CREATE POLICY "Permettre lecture clients"
-  ON clients FOR SELECT
-  TO authenticated
-  USING (true);
-
-CREATE POLICY "Permettre insertion clients"
-  ON clients FOR INSERT
-  TO authenticated
-  WITH CHECK (true);
-
-CREATE POLICY "Permettre lecture transports"
-  ON transports FOR SELECT
-  TO authenticated
-  USING (true);
-
-CREATE POLICY "Permettre insertion transports"
-  ON transports FOR INSERT
-  TO authenticated
-  WITH CHECK (true);
-
-CREATE POLICY "Permettre lecture produits"
-  ON produits FOR SELECT
-  TO authenticated
-  USING (true);
-
-CREATE POLICY "Permettre insertion produits"
-  ON produits FOR INSERT
-  TO authenticated
-  WITH CHECK (true);
-
-CREATE POLICY "Permettre lecture chargements"
-  ON chargements FOR SELECT
-  TO authenticated
-  USING (true);
-
-CREATE POLICY "Permettre insertion chargements"
-  ON chargements FOR INSERT
-  TO authenticated
-  WITH CHECK (true);
-
-CREATE POLICY "Permettre lecture chargement_produits"
-  ON chargement_produits FOR SELECT
-  TO authenticated
-  USING (true);
-
-CREATE POLICY "Permettre insertion chargement_produits"
-  ON chargement_produits FOR INSERT
-  TO authenticated
-  WITH CHECK (true);
 
 INSERT INTO clients (nom) VALUES 
-  ('Client A'),
-  ('Client B'),
-  ('Client C');
+  ('Client_A'),
+  ('Client_B'),
+  ('Client_C');
 
 INSERT INTO transports (nom) VALUES 
-  ('Transport Express'),
-  ('Transport Rapide'),
-  ('Transport Standard');
+  ('Transport_A'),
+  ('Transport_B'),
+  ('Transport_C');
 
 INSERT INTO produits (nom) VALUES 
-  ('Produit Alpha'),
-  ('Produit Beta'),
-  ('Produit Gamma'),
-  ('Produit Delta');
+  ('Produit_A'),
+  ('Produit_B'),
+  ('Produit_C'),
+  ('Produit_D');
