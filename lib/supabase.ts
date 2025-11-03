@@ -39,5 +39,5 @@ export type ChargementProduit = {
   produit_id: string;
   quantite: number;
   created_at: string;
-  produits?: Produit;
+  produits: Produit;
 };
