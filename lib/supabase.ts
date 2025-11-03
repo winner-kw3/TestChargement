@@ -30,6 +30,7 @@ export type Chargement = {
   created_at: string;
   clients?: Client;
   transports?: Transport;
+  chargement_produits?: ChargementProduit[]
 };
 
 export type ChargementProduit = {
