@@ -1,24 +1,27 @@
 # Test_Chargement
 
-
 ## Installer les dépendances
+
 1. Ouvrir un terminal à la racine du projet :
+
    - git clone https://github.com/winner-kw3/TestChargement.git
    - cd TestChargement
 
 2. Installer les dépendances :
    npm install
 
-
 ## Configurer Supabase (création du projet & clés)
+
 1. Créer un projet sur https://app.supabase.com
 
-2. Dans le projet Supabase - Settings - API, récupérer :
+2. Dans le projet Supabase -> Connect -> App Frameworks,
+   Choisir Framework Next.js récupérer :
    - URL du projet -> `NEXT_PUBLIC_SUPABASE_URL`
    - ANON KEY (public) -> `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 3. Coller ces valeurs dans `.env` (ou créer `.env`) et coller ces valeurs.
 
 ## Schéma de base de données (SQL)
+
 Exécuter ces requêtes SQL dans l'éditeur SQL de Supabase pour créer les tables utilisées par l'app.
 
 ```sql
@@ -58,17 +61,17 @@ CREATE TABLE IF NOT EXISTS chargement_produits (
 
 
 
-INSERT INTO clients (nom) VALUES 
+INSERT INTO clients (nom) VALUES
   ('Client_A'),
   ('Client_B'),
   ('Client_C');
 
-INSERT INTO transports (nom) VALUES 
+INSERT INTO transports (nom) VALUES
   ('Transport_A'),
   ('Transport_B'),
   ('Transport_C');
 
-INSERT INTO produits (nom) VALUES 
+INSERT INTO produits (nom) VALUES
   ('Produit_A'),
   ('Produit_B'),
   ('Produit_C'),
@@ -76,11 +79,8 @@ INSERT INTO produits (nom) VALUES
 ```
 
 ## lancer le projet
+
 1. Lancer le serveur de développement :
    npm run dev
 
 2. Ouvrir http://localhost:3000
-
-
-
-
