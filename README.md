@@ -1,38 +1,22 @@
 # Test_Chargement
 
 
-## Installer et lancer le projet
+## Installer les dépendances
 1. Ouvrir un terminal à la racine du projet :
-   git clone https://github.com/winner-kw3/TestChargement.git
-   cd TestChargement
+   - git clone https://github.com/winner-kw3/TestChargement.git
+   - cd TestChargement
 
 2. Installer les dépendances :
    npm install
 
-3. Copier l'exemple d'environnement et remplir les clés Supabase :
-   - Copier `.env.local.example` en `.env.local` (ou créer `.env` si vous préférez)
-   - Remplir `NEXT_PUBLIC_SUPABASE_URL` et `NEXT_PUBLIC_SUPABASE_ANON_KEY` (clé anonyme)
-
-
-4. Lancer le serveur de développement :
-   npm run dev
-
-5. Ouvrir http://localhost:3000
-
-Les fichiers centraux :
-- [lib/supabase.ts](lib/supabase.ts) — création du client Supabase utilisé par l'app
-- [app/chargements/page.tsx](app/chargements/page.tsx) — écran de listing
-- [.env.local.example](.env.local.example) — exemple de variables d'environnement
-- [package.json](package.json)
 
 ## Configurer Supabase (création du projet & clés)
 1. Créer un projet sur https://app.supabase.com
+
 2. Dans le projet Supabase - Settings - API, récupérer :
    - URL du projet -> `NEXT_PUBLIC_SUPABASE_URL`
    - ANON KEY (public) -> `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-3. Coller ces valeurs dans `.env.local` (ou `.env`).
-
-
+3. Coller ces valeurs dans `.env` (ou créer `.env`) et coller ces valeurs.
 
 ## Schéma de base de données (SQL)
 Exécuter ces requêtes SQL dans l'éditeur SQL de Supabase pour créer les tables utilisées par l'app.
@@ -90,3 +74,13 @@ INSERT INTO produits (nom) VALUES
   ('Produit_C'),
   ('Produit_D');
 ```
+
+## lancer le projet
+1. Lancer le serveur de développement :
+   npm run dev
+
+2. Ouvrir http://localhost:3000
+
+
+
+
